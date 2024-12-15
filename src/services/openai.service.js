@@ -13,10 +13,11 @@ const openai = new OpenAI({
 export const generateResponse = async (messages) => {
     try {
         const completion = await openai.chat.completions.create({
-            model: "gpt-4",
+            model: "gpt-4o",
             messages: messages,
-            temperature: 0.7,
-            max_tokens: 800
+            temperature: 1,
+            max_tokens: 4096,
+            top_p: 1
         });
         return completion.choices[0].message.content;
     } catch (error) {
