@@ -1,0 +1,27 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A WhatsApp bot powered by OpenAI's GPT model",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "lint": "eslint src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^4.0.0",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
+    "qrcode-terminal": "^0.12.0",
+    "sequelize": "^6.31.1",
+    "uuid": "^9.0.0",
+    "whatsapp-web.js": "^1.21.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "nodemon": "^2.0.22"
+  }
+}
